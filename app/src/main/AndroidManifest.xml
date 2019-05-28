@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.c196assessmentbrianadair">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AssessmentDetail"
+            android:label="@string/title_activity_assessment_detail"
+            android:parentActivityName=".AssessmentsListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196assessmentbrianadair.AssessmentsListActivity" />
+        </activity>
+        <activity
+            android:name=".CourseDetail"
+            android:label="@string/title_activity_course_detail"
+            android:parentActivityName=".CoursesListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196assessmentbrianadair.CoursesListActivity" />
+        </activity>
+        <activity
+            android:name=".TermDetail"
+            android:label="@string/title_activity_term_detail"
+            android:parentActivityName=".TermsListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196assessmentbrianadair.TermsListActivity" />
+        </activity>
+        <activity
+            android:name=".CoursesListActivity"
+            android:label="@string/title_activity_courses_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196assessmentbrianadair.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TermsListActivity"
+            android:label="@string/title_activity_terms_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196assessmentbrianadair.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentsListActivity"
+            android:label="@string/title_activity_assessments_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196assessmentbrianadair.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name=".DbProvider"
+            android:authorities="com.example.c196assessmentbrianadair.dbprovider"
+            android:exported="false" />
+    </application>
+
+</manifest>
